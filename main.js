@@ -8,6 +8,6 @@ ASSET_MANAGER.downloadAll(function () {
 	var canvas = document.getElementById('gameWorld');
 	var ctx = canvas.getContext('2d');
 	gameEngine.init(ctx);
-	gameEngine.addEntity(new Robot(this.gameEngine, 0, 0));
+	gameEngine.addEntity(new Robot(this.gameEngine));
 	gameEngine.start();
 });

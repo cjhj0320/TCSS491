@@ -1,6 +1,6 @@
 class Robot {
-    constructor(game, x, y) {
-        Object.assign(this, {game, x, y});
+    constructor(game) {
+        Object.assign(this, {game});
 
         this.spritesheet = ASSET_MANAGER.getAsset("./robot.png");
 
@@ -12,6 +12,6 @@ class Robot {
     }
 
     draw(ctx) {
-        this.animation.drawFrame(this.game.clockTick, ctx, 20, 20, 1);
+        this.animation.drawFrame(this.game.clockTick, ctx, 300, 150, 1);
     }
 }
