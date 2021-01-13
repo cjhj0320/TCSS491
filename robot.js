@@ -4,7 +4,7 @@ class Robot {
 
         this.spritesheet = ASSET_MANAGER.getAsset("./robot.png");
 
-        this.animation = new Animator(this.spritesheet, 30, 40, 380, 430, 14, 0.1, 38, true, true);
+        this.animation = new Animator(this.spritesheet, 30, 40, 380, 430, 14, 0.5, 38, true, true);
     }
 
     update() {
